@@ -22,6 +22,10 @@
   "homepage": "https://github.com/Elevationacademy/ReactMobxBP#readme",
   "dependencies": {
     "concurrently": "^4.0.1",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "express-jwt": "^5.3.1",
+    "passport": "^0.4.0",
+    "passport-facebook": "^2.1.1",
+    "react-router-dom": "^4.3.1"
   }
 }
