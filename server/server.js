@@ -1,6 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser') 
-const expressSession = require('express-session') 
+// const expressSession = require('express-session') 
 const passport = require('./passport');
 const app = express()
 const PORT = 5000
@@ -11,9 +11,9 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
 //Passport and session
-app.use(expressSession({ secret: 'thisIsASecret', resave: false, saveUninitialized: false }));
+// app.use(expressSession({ secret: 'thisIsASecret', resave: false, saveUninitialized: false }));
 app.use(passport.initialize())
-app.use(passport.session()) 
+// app.use(passport.session()) 
 
 
 app.use('/user', user)

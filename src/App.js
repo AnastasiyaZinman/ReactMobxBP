@@ -23,7 +23,11 @@ class App extends Component {
   }
 
   getUser = ()=>{
-    axios.get('/user/').then(response => { 
+    axios.get('/user/', {
+      headers: {
+          'Authorization': "Bearer " + localStorage.getItem('token'),
+      }
+  }).then(response => { 
       if (response.data.user) {
         console.log('Get User: There is a user saved in the server session: ') 
         this.updateUser({
@@ -48,6 +52,7 @@ class App extends Component {
                 loggedIn: false,
                 username: null
             })
+            localStorage.setItem('token','');   
         }
     }).catch(error => {
         console.log('Logout error')

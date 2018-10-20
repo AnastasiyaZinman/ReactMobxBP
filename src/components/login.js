@@ -26,7 +26,8 @@ class LoginForm extends Component {
                 password: this.state.password
             })
             .then(response => {
-                if (response.status === 200) {
+                localStorage.setItem('token',response.data.token);   
+                if (response.data.token) {
                     this.props.updateUser({
                         loggedIn: true,
                         username: response.data.username
