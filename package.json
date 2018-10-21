@@ -13,8 +13,10 @@
     "babel-plugin-named-asset-import": "^0.2.2",
     "babel-preset-react-app": "^5.0.3",
     "bfj": "6.1.1",
+    "body-parser": "^1.18.3",
     "case-sensitive-paths-webpack-plugin": "2.1.2",
     "chalk": "2.4.1",
+    "cors": "^2.8.4",
     "css-loader": "1.0.0",
     "dotenv": "6.0.0",
     "dotenv-expand": "4.2.0",
@@ -25,6 +27,7 @@
     "eslint-plugin-import": "2.14.0",
     "eslint-plugin-jsx-a11y": "6.1.1",
     "eslint-plugin-react": "7.11.1",
+    "express": "^4.16.4",
     "file-loader": "2.0.0",
     "fs-extra": "7.0.0",
     "html-webpack-plugin": "4.0.0-alpha.2",
@@ -36,6 +39,8 @@
     "mobx": "^5.5.0",
     "mobx-react": "^5.2.8",
     "optimize-css-assets-webpack-plugin": "5.0.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
     "pnp-webpack-plugin": "1.1.0",
     "postcss-flexbugs-fixes": "4.1.0",
     "postcss-loader": "3.0.0",
@@ -117,5 +122,21 @@
     "presets": [
       "react-app"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).\r ## Package is installed with es7 decorators support and mobx",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnastasiyaZinman/ReactMobxBP.git"
+  },
+  "keywords": [
+    "react",
+    "authentication"
+  ],
+  "author": "AZ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnastasiyaZinman/ReactMobxBP/issues"
+  },
+  "homepage": "https://github.com/AnastasiyaZinman/ReactMobxBP#readme"
 }
